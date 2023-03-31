@@ -1,0 +1,345 @@
+:root {
+  --body-background-color: #e5e5e5;
+  --logo-color: #4d5ae5;
+  --logo-header-color: #2e2f42;
+  --logo-footer-color: #f4f4fd;
+  --nav-background-color: #ffffff;
+  --nav-color: #2e2f42;
+  --nav-hoverfocus-color: #404bbf;
+  --address-color: #434455;
+  --hero-background-color: #2e2f42;
+  --hero-title-color: #ffffff;
+  --hero-btn-background-color: #4d5ae5;
+  --hero-btn-color: #ffffff;
+  --hero-btn-hoverfocus-background-color: #404bbf;
+  --list-btn-color: #4d5ae5;
+  --list-btn-background-color: #f4f4fd;
+  --list-btn-hoverfocus-background-color: #404bbf;
+  --list-btn-hoverfocus-color: #ffffff;
+  --portfolio-background-color: #ffffff;
+  --priorities-background-color: #ffffff;
+  --doing-background-color: #ffffff;
+  --main-title-color: #2e2f42;
+  --main-subtitle-color: #2e2f42;
+  --main-text-color: #434455;
+  --team-background-color: #f4f4fd;
+  --team-item-background-color: #ffffff;
+  --footer-background-color: #2e2f42;
+  --footer-color: #f4f4fd;
+}
+
+/*--- Всегда делаем Сброс всех стилей браузера, для удобвства!---*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+address {
+  font-style: normal;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/*--- задаем размер контейнера всей старницы---*/
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--- задаем стандартные значения для всей страницы---*/
+body {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--body-background-color);
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-title-color);
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-subtitle-color);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+/*------------------ Header ---------------------------*/
+/*-------LOGO+NAV Studio+Portfolio pages --------*/
+header {
+  background-color: var(--nav-background-color);
+  border-bottom: 1px solid #e7e9fc;
+}
+.header div {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+a.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color);
+}
+span.logo.header {
+  color: var(--logo-header-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav.list {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
+}
+.nav.link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--nav-color);
+  background-color: var(--nav-background-color);
+}
+.nav.link:hover,
+.nav.link:focus {
+  color: var(--nav-hoverfocus-color);
+}
+
+.address {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display: flex;
+  margin-left: auto;
+}
+.address.link {
+  color: var(--address-color);
+}
+.address.link:hover,
+.address.link:focus {
+  color: #404bbf;
+}
+.address.list {
+  gap: 40px;
+}
+
+/*-- Section Portfolio filter list --*/
+ul.filter.list {
+  padding-top: 93px;
+  padding-bottom: 72px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  justify-content: center;
+}
+button.list.btn {
+  height: 48px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--list-btn-color);
+  background-color: var(--list-btn-background-color);
+  align-items: center;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+button.list.btn:hover,
+button.list.btn:focus {
+  background-color: var(--list-btn-hoverfocus-background-color);
+  color: var(--list-btn-hoverfocus-color);
+}
+
+/*--------------Portfolio page. MAIN ---------------*/
+section.portfolio {
+  background-color: var(--portfolio-background-color);
+}
+div.cards {
+  padding-bottom: 120px;
+}
+
+ul.card.list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+div.card.signature {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+h3.card.subtitle {
+  padding-top: 32px;
+  padding-left: 16px;
+}
+p.card.text {
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+}
+
+/*--------------------Section 1 Hero -----------------------*/
+section.hero {
+  background-color: var(--hero-background-color);
+}
+div.container.hero {
+  padding-top: 188px;
+  padding-bottom: 292px;
+  box-sizing: content-box;
+  width: 496px;
+  height: 120px;
+  text-align: center;
+}
+
+h1.hero.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--hero-title-color);
+  padding-bottom: 48px;
+}
+button.hero.btn {
+  width: 169px;
+  height: 56px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--hero-btn-color);
+  background-color: var(--hero-btn-background-color);
+  border-radius: 4px;
+  margin-right: auto;
+}
+button.hero.btn:hover,
+button.hero.btn:focus {
+  background-color: var(--hero-btn-hoverfocus-background-color);
+}
+
+/*---------------------- Section 2 Priorities -----------------------*/
+section.priorities {
+  padding-top: 120px;
+  background-color: var(--priorities-background-color);
+}
+
+ul.priorities.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+h3.priorities.subtitle {
+  padding-bottom: 8px;
+}
+/*---------------------- Section 3 Doing -----------------------*/
+section.doing {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--doing-background-color);
+}
+ul.doing.list {
+  padding-top: 72px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+/*------------------ Section 4 Team -----------------*/
+section.team {
+  box-sizing: border-box;
+  background-color: var(--team-background-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+h2.team.title {
+  padding-bottom: 72px;
+}
+
+ul.team.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+li.team.item {
+  width: 264px;
+  height: 380px;
+  box-sizing: border-box;
+}
+div.team.signature {
+  background: var(--team-item-background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+}
+h3.team.subtitle {
+  padding-top: 32px;
+  padding: auto;
+}
+p.team.text {
+  padding-top: 8px;
+  padding-bottom: 32px;
+}
+/*-------------- FOOTER - Подвал страницы ---------------*/
+footer {
+  background-color: var(--footer-background-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+div.container.box {
+  box-sizing: content-box;
+  width: 264px;
+  margin-left: 156px;
+}
+
+span.logo.footer {
+  color: var(--logo-footer-color);
+}
+p.footer.item.text {
+  color: var(--footer-color);
+  padding-top: 16px;
+}
